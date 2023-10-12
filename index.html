@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="page-container">
+      <h1>To-Do List</h1>
+      <div class="input-container">
+        <input
+          type="text"
+          class="task-input"
+          name="fname"
+          placeholder="Buy groceries"
+        />
+        <button class="add-button">+</button>
+      </div>
+      <div class="task-container">
+        <!-- Example task placeholder; you can duplicate this structure for additional placeholders -->
+        <div class="task placeholder">
+          <button class="check-button">✓</button>
+          <p>Your task here...</p>
+          <button class="remove-button">✕</button>
+        </div>
+      </div>
+      <div class="summary-section">
+        <p class="remaining-tasks">You have 0 remaining tasks</p>
+        <button class="clear-all-btn">Clear All</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

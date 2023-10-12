@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #3a6ea5, #87ceeb);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.page-container {
+  background-color: azure;
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.input-container,
+.task-container,
+.summary-section {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  margin-bottom: 25px;
+}
+
+.task-container {
+  flex-direction: column;
+  margin: 7px;
+}
+
+.task {
+  background-color: lightgrey;
+  margin: 5px 0;
+  padding: 5px;
+  width: 80%;
+  text-align: center;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.placeholder p {
+  color: #aaa;
+  font-style: italic;
+}
+
+.input-container {
+  width: 80%;
+}
+
+.task-input,
+.add-button,
+.clear-all-btn {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.clear-all-btn {
+  margin-left: 7px;
+}
+
+.add-button {
+  margin-left: 7px;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+.check-button,
+.remove-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.check-button:hover {
+  color: green;
+}
+
+.remove-button:hover {
+  color: red;
+}
+
+.task.completed p {
+  text-decoration: line-through;
+  color: gray;
+}
